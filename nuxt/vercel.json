@@ -4,11 +4,12 @@
     {
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder"
-    },
-    {
-      "src": "api/*.js",
-      "use": "@vercel/node"
     }
   ],
-  "cleanUrls": true
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://nuxt-monorepo-api.vercel-support.app/api/:match*"
+    }
+  ]
 }

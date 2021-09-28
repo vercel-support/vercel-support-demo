@@ -10,6 +10,6 @@
         "use": "@vercel/node" }
     ],
     "rewrites": [
-      { "source": "/api/:match*.js", "destination": "/api/:match*" }
+    { "source": "/api/(.*).js", "destination": "/api/(.*)" }
     ]
   }

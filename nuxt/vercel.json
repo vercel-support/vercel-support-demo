@@ -6,10 +6,10 @@
       "use": "@nuxtjs/vercel-builder"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/:match*",
-      "destination": "https://nuxt-monorepo-api.vercel-support.app/api/:match*"
+      "src": "/api/:match*",
+      "dest": "https://nuxt-monorepo-api.vercel-support.app/api/:match*"
     }
   ]
 }

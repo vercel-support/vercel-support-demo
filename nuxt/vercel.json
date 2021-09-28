@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/api/:match*",
-      "dest": "https://nuxt-monorepo-api.vercel-support.app/api/:match*"
+      "src": "/api/(.*)",
+      "dest": "https://nuxt-monorepo-api.vercel-support.app/api/$1"
     }
   ]
 }
